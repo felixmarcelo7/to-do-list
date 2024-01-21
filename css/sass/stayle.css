@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-image: url("/img/background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body button {
+  background-color: #fdfdfd;
+  color: #102f5e;
+  border: 2px solid #102f5e;
+  padding: 0.3rem 0.6rem;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+body button i {
+  color: #102f5e;
+  pointer-events: none;
+  font-weight: bold;
+}
+body button:hover {
+  background-color: #102f5e;
+  color: #fdfdfd;
+}
+body button:hover > i {
+  color: #fdfdfd;
+}
+body input, body select {
+  padding: 0.25rem 0.5rem;
+}
+body .hide {
+  display: none;
+}/*# sourceMappingURL=stayle.css.map */
