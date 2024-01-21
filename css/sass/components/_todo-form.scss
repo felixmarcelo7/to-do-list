@@ -1,0 +1,24 @@
+@import "../abstracts/variables";
+
+#todo-form {
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+    p {
+        margin-bottom: .5rem;
+        font-weight: bold;
+    }
+    .form-control {
+        display: flex;
+        input {
+            margin-right: .3rem;
+        }
+    }
+}
+
+#edit-form {
+    #cancel-edit-btn {
+        margin-top: 1rem;
+    }
+
+    @extend #todo-form
+}

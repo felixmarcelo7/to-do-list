@@ -55,4 +55,23 @@ body .hide {
   text-align: center;
   padding: 0 1rem 1rem;
   border-bottom: 1px solid #ccc;
+}
+
+#todo-form, #edit-form {
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+#todo-form p, #edit-form p {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+#todo-form .form-control, #edit-form .form-control {
+  display: flex;
+}
+#todo-form .form-control input, #edit-form .form-control input {
+  margin-right: 0.3rem;
+}
+
+#edit-form #cancel-edit-btn {
+  margin-top: 1rem;
 }/*# sourceMappingURL=stayle.css.map */
