@@ -7,7 +7,6 @@
 }
 
 body {
-  height: 100vh;
   background-image: url("/img/background.jpg");
   background-position: center;
   background-size: cover;
@@ -106,4 +105,28 @@ body .hide {
 }
 #toolbar #filter select {
   flex: 1;
+}
+
+#todo-list .todo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+  transition: 0.3s;
+}
+#todo-list .todo h3 {
+  flex: 1;
+  font-size: 0.9rem;
+}
+#todo-list .todo button {
+  margin-left: 0.4rem;
+}
+#todo-list .done {
+  background-color: #395169;
+}
+#todo-list .done h3 {
+  color: #fff;
+  text-decoration: line-through;
+  font-style: italic;
 }/*# sourceMappingURL=stayle.css.map */
