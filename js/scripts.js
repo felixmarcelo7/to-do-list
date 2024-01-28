@@ -34,10 +34,10 @@ const saveTodo = (text) => {
 
     todoList.appendChild(todo);
 
-    console.log(todo);
     todoInput.value = "";
     todoInput.focus();
-}
+
+};
 
 //Eventos
 todoForm.addEventListener("submit", e => {
@@ -48,4 +48,19 @@ todoForm.addEventListener("submit", e => {
     if(inputValue) {
         saveTodo(inputValue);
     }
+});
+
+document.addEventListener("click", e => {
+    const targetEl = e.target; //para saber qual elemento foi clicado
+    const parentEl = targetEl.closest("div"); //seleciona o elemento "div" mais próximo
+ 
+    if(targetEl.classList.contains("finish-todo")) { //verifica se o elemento clicado tem a clase "finish-todo"
+        parentEl.classList.toggle("done");//adiciona a class "done" na div pai
+        //.toggle verifica se a class já existe, se já ele tira, se não ele coloca
+    };
+
+    if(targetEl.classList.contains("remove-todo")) {
+        parentEl.remove(); //remove a div
+    }
+
 });
